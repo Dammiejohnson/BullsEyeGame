@@ -9,12 +9,19 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.BullsEyeGame"
+        android:theme="@style/Theme.CustomSplashScreen"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".AboutActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.BullsEyeGame"
             android:screenOrientation="landscape"
-            android:exported="true">
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.BullsEyeGame.NoActionBar.FullScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
